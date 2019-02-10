@@ -1,6 +1,11 @@
 <?php
 
-echo 'processing..';
+echo 'processing...';
+
+//Check for POST variable
+if(isset($_POST['name'])){
+	echo "POST: Your name is ". $_POST['name'];
+}
 
 //Check for GET variable
 if(isset($_GET['name'])){
